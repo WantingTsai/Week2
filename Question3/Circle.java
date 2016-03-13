@@ -36,11 +36,11 @@ public class Circle {
             }
             System.out.print("輸入角度：");
             an = s.nextInt();
-            Circle_r c = new Circle_r(r[count-1]);
-            System.out.println("編號："+id[count-1]);
-            System.out.println("半徑："+r[count-1]);
+            Circle_r c = new Circle_r(r[num-1]);
+            System.out.println("編號："+id[num-1]);
+            System.out.println("半徑："+r[num-1]);
             System.out.println("弧長："+c.Arc(an));
-            System.out.println("面積："+c.Pie(an));
+            System.out.println("面積："+c.Area(an));
         }
     }
 }
@@ -52,7 +52,7 @@ class Circle_r{
 	double Arc(double an){
 		return (2*r*3.14)*an/360;
 	}
-	double Pie(double an){
+	double Area(double an){
 		return (r*r*3.14)*an/360;
 	}
 }
